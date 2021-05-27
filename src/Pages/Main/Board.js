@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 function Board(props) {
   const [contents, setContents] = useState([]);
+
   useEffect(() => {
     fetch("/data/contentsList.json")
       // fetch(`http://10.188.1.154:8080/board`)
